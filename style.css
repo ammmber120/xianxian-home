@@ -947,3 +947,46 @@ a.quick-card {
   color:var(--brown);
   font-weight:900;
 }
+
+
+/* V8: price moves under title/location, on the right side of the tags row */
+.title-area{
+  min-width:0;
+  margin-bottom:4px;
+}
+.title-area h3{
+  margin:0 0 2px;
+  font-size:14px;
+  line-height:1.25;
+  letter-spacing:.5px;
+}
+.title-area .location{
+  margin:0;
+  font-size:10.5px;
+  line-height:1.3;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.tags-price-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:start;
+  gap:6px;
+  margin-bottom:5px;
+}
+.tags-price-row .tags{
+  margin:0;
+  gap:4px;
+  min-width:0;
+}
+.tags-price-row .price{
+  margin:0;
+  padding-top:1px;
+  font-size:18px;
+  line-height:1.1;
+  white-space:nowrap;
+  text-align:right;
+  color:var(--brown);
+  font-weight:900;
+}
