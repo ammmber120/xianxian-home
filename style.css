@@ -502,3 +502,247 @@ footer {
     gap: 4px;
   }
 }
+
+
+/* V4 compact homepage */
+.hero {
+  padding-bottom: 18px;
+}
+
+.hero-cta {
+  width: min(100%, 760px);
+  margin: 18px auto 0;
+}
+
+.hero-cta .line-btn {
+  margin-top: 0;
+}
+
+.intro {
+  margin-bottom: 12px;
+}
+
+main {
+  padding-top: 16px;
+}
+
+.property-list {
+  gap: 12px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  border-radius: 18px;
+}
+
+.image-wrap {
+  height: 100%;
+  min-height: 168px;
+}
+
+.card-body {
+  padding: 12px 14px;
+}
+
+.card h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.location {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.tags {
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.tags span {
+  font-size: 11px;
+  padding: 5px 9px;
+}
+
+.info {
+  margin: 8px 0 10px;
+}
+
+.info div {
+  padding: 7px 3px;
+}
+
+.info small {
+  font-size: 10px;
+}
+
+.info strong {
+  font-size: 11px;
+}
+
+.actions {
+  gap: 8px;
+}
+
+.actions a {
+  padding: 9px 10px;
+  font-size: 13px;
+}
+
+.home-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Put more-box and contact-box side by side on homepage */
+.more-box,
+.contact-box {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.more-box h3,
+.contact-box h3 {
+  font-size: 16px;
+}
+
+.more-box p,
+.contact-box p {
+  font-size: 12px;
+}
+
+.more-box a,
+.contact-box a {
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.contact-box {
+  grid-template-columns: 42px 1fr;
+}
+
+.contact-box .avatar {
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+}
+
+@media (min-width: 521px) {
+  main .more-box {
+    width: calc(50% - 6px);
+    float: left;
+  }
+
+  main .contact-box {
+    width: calc(50% - 6px);
+    float: right;
+  }
+
+  .contact-info {
+    clear: both;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding-bottom: 16px;
+  }
+
+  .hero-cta {
+    margin-top: 16px;
+  }
+
+  .intro span {
+    margin-bottom: 4px;
+  }
+
+  .intro h2 {
+    font-size: 14px;
+  }
+
+  .property-list {
+    gap: 10px;
+  }
+
+  .card {
+    grid-template-columns: 40% 60%;
+    border-radius: 16px;
+  }
+
+  .image-wrap {
+    min-height: 150px;
+  }
+
+  .badge {
+    left: 8px;
+    top: 8px;
+    font-size: 11px;
+    padding: 5px 9px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .tags span:nth-child(n+3) {
+    display: none;
+  }
+
+  .compact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .compact-info div:nth-child(n+3) {
+    display: none;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-btn {
+    display: none;
+  }
+
+  .more-box,
+  .contact-box {
+    width: calc(50% - 5px);
+    display: inline-grid;
+    vertical-align: top;
+    min-height: 150px;
+  }
+
+  .more-box {
+    margin-right: 6px;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box .avatar {
+    display: none;
+  }
+
+  .contact-box a {
+    grid-column: auto;
+  }
+}
