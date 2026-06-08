@@ -2,8 +2,8 @@
 // 注意：文字前後要保留引號，逗號也不要刪掉。
 // 上架 true，下架 false。
 
-const LINE_URL = "https://line.me/R/ti/p/@你的LINE官方帳號ID";
-const BRAND_URL = "https://你的品牌專區網址";
+const LINE_URL = "https://lin.ee/5v29GoQ";
+const BRAND_URL = "https://shop.taiching.com.tw/077223000";
 
 const properties = [
   {
