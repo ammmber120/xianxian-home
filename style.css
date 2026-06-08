@@ -824,3 +824,65 @@ main {
     grid-template-columns: 105px 1fr;
   }
 }
+
+
+/* FIX: force bottom quick cards to display as two beige cards, not text links */
+.quick-links,
+main .quick-links {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 14px !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
+.quick-links .quick-card,
+main .quick-links .quick-card,
+a.quick-card {
+  min-height: 110px !important;
+  padding: 14px 10px !important;
+  background: rgba(255,250,245,.94) !important;
+  border: 1px solid rgba(216,192,172,.9) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 20px rgba(93,63,42,.08) !important;
+  text-decoration: none !important;
+  color: var(--brown) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 6px !important;
+}
+
+.quick-links .quick-card:visited,
+.quick-links .quick-card:hover,
+.quick-links .quick-card:active {
+  color: var(--brown) !important;
+  text-decoration: none !important;
+}
+
+.quick-links .quick-icon {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  display: block !important;
+}
+
+.quick-links .quick-card strong {
+  display: block !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  color: var(--brown) !important;
+}
+
+.quick-links .quick-card small {
+  display: block !important;
+  color: #7a6150 !important;
+  font-size: 12px !important;
+  text-decoration: none !important;
+}
+
+.contact-info {
+  clear: both !important;
+}
