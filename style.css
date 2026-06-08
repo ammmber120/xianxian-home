@@ -93,15 +93,16 @@ body {
 .brand.small h1 { font-size: 20px; }
 
 .logo, .avatar {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   border: 1px solid var(--coffee);
   display: grid;
   place-items: center;
   color: var(--brown);
-  font-weight: 800;
+  font-weight: 900;
   background: rgba(255,255,255,.55);
+  font-size: 15px;
 }
 
 h1 {
@@ -436,5 +437,68 @@ footer {
   .logo, .avatar {
     width: 44px;
     height: 44px;
+  }
+}
+
+
+.hero-main.clean {
+  text-align: left;
+}
+
+.hero-main.clean h2 {
+  margin-bottom: 22px;
+}
+
+.contact-info {
+  margin-top: 18px;
+  padding: 20px 18px;
+  background: rgba(255,250,245,.92);
+  border: 1px solid rgba(216,192,172,.8);
+  border-radius: 22px;
+  box-shadow: 0 10px 26px rgba(93,63,42,.08);
+}
+
+.contact-info h3 {
+  margin: 0 0 14px;
+  font-size: 20px;
+  color: var(--brown);
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  align-items: center;
+}
+
+.contact-row span {
+  color: #8a7564;
+  font-size: 14px;
+}
+
+.contact-row a,
+.contact-row strong {
+  color: var(--brown);
+  text-decoration: none;
+  font-size: 15px;
+  word-break: break-all;
+}
+
+@media (max-width: 520px) {
+  .logo, .avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .hero-main.clean {
+    text-align: left;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
