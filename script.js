@@ -14,9 +14,13 @@ function renderCards() {
         <span class="badge">${p.no}</span>
       </a>
       <div class="card-body">
-        <h3>${p.title}</h3>
-        <p class="location">${p.location}</p>
-        <p class="price">${p.price}</p>
+        <div class="title-price-row">
+          <div class="title-area">
+            <h3>${p.title}</h3>
+            <p class="location">${p.location}</p>
+          </div>
+          <p class="price">${p.price}</p>
+        </div>
         <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
         <div class="info compact-info">
           ${Object.entries(p.info).slice(0, 4).map(([k, v]) => `<div><small>${k}</small><strong>${v}</strong></div>`).join("")}

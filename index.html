@@ -126,6 +126,61 @@
     }
   </style>
 
+
+  <style>
+    .title-price-row{
+      display:grid !important;
+      grid-template-columns:minmax(0,1fr) auto !important;
+      align-items:start !important;
+      gap:6px !important;
+      margin-bottom:5px !important;
+    }
+    .title-area{
+      min-width:0 !important;
+    }
+    .title-area h3{
+      margin:0 0 2px !important;
+      font-size:14px !important;
+      line-height:1.25 !important;
+      letter-spacing:.5px !important;
+    }
+    .title-area .location{
+      margin:0 !important;
+      font-size:10.5px !important;
+      line-height:1.3 !important;
+      white-space:nowrap !important;
+      overflow:hidden !important;
+      text-overflow:ellipsis !important;
+    }
+    .title-price-row .price{
+      margin:0 !important;
+      font-size:18px !important;
+      line-height:1.1 !important;
+      white-space:nowrap !important;
+      text-align:right !important;
+      color:#5d3f2a !important;
+      font-weight:900 !important;
+    }
+    .tags{
+      margin-bottom:5px !important;
+    }
+    .compact-info{
+      margin:5px 0 7px !important;
+    }
+    .reserve-btn{
+      padding:7px 10px !important;
+    }
+    .image-wrap{
+      min-height:126px !important;
+    }
+    @media(max-width:390px){
+      .title-area h3{font-size:13.2px !important;}
+      .title-price-row .price{font-size:16.5px !important;}
+      .image-wrap{min-height:118px !important;}
+      .card-body{padding:8px 9px !important;}
+    }
+  </style>
+
 </head>
 <body>
   <header class="hero">
@@ -163,7 +218,7 @@
     </section>
 
     <section class="contact-info">
-      <h3>聯絡仙仙 <span>（仙仙就是萱萱的萱）</span></h3>
+      <h3>聯絡仙仙 <span>（仙仙就是萱）</span></h3>
       <div class="contact-row">
         <span>LINE官方帳號</span>
         <a href="https://lin.ee/5v29GoQ" target="_blank">https://lin.ee/5v29GoQ</a>
