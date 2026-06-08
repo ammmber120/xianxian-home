@@ -10,6 +10,8 @@
 
 * { box-sizing: border-box; }
 
+html, body { overflow-x: hidden; }
+
 body {
   margin: 0;
   background: linear-gradient(180deg, #fffaf4 0%, #f7ebdf 100%);
@@ -26,8 +28,52 @@ body {
   border-bottom-right-radius: 34px;
 }
 
+.hero {
+  overflow: hidden;
+}
+
+.hero-top, .hero-main {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.hero-main {
+  margin-top: 26px;
+  padding: 26px 20px;
+  border: 1px solid rgba(216,192,172,.72);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(255,250,245,.88), rgba(236,216,199,.68)),
+    radial-gradient(circle at bottom right, rgba(155,113,79,.18), transparent 36%);
+  box-shadow: 0 12px 28px rgba(93,63,42,.08);
+}
+
+.hero-main h2 {
+  margin: 10px 0 8px;
+  font-size: clamp(32px, 8vw, 46px);
+  line-height: 1.16;
+  letter-spacing: 2px;
+  color: var(--brown);
+}
+
+.hero-main p {
+  margin: 0 0 18px;
+  color: #715744;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--coffee);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
 .detail-header {
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .back-link {
@@ -81,6 +127,11 @@ h1 {
   padding: 13px 16px;
   border-radius: 999px;
   font-weight: 700;
+}
+
+.line-btn.primary {
+  margin-top: 0;
+  box-shadow: 0 8px 18px rgba(93,63,42,.14);
 }
 
 main {
@@ -335,4 +386,55 @@ footer {
   .compact-info div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .actions { grid-template-columns: 1fr; }
   .detail-hero { height: 250px; }
+}
+
+
+@media (min-width: 820px) {
+  .property-list {
+    gap: 22px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 42% 58%;
+  }
+
+  .image-wrap {
+    height: 100%;
+    min-height: 310px;
+  }
+
+  .card-body {
+    padding: 24px;
+  }
+
+  .hero-main {
+    text-align: center;
+  }
+
+  .hero-main .line-btn {
+    width: min(360px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 18px 14px 24px;
+  }
+
+  .hero-main {
+    margin-top: 22px;
+    padding: 22px 18px;
+  }
+
+  .brand h1 {
+    font-size: 22px;
+  }
+
+  .logo, .avatar {
+    width: 44px;
+    height: 44px;
+  }
 }
