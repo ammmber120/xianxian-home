@@ -746,3 +746,81 @@ main {
     grid-column: auto;
   }
 }
+
+
+/* V5 final homepage bottom layout */
+.quick-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.quick-card {
+  min-height: 116px;
+  padding: 14px 10px;
+  background: rgba(255,250,245,.92);
+  border: 1px solid rgba(216,192,172,.9);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(93,63,42,.08);
+  text-decoration: none;
+  color: var(--brown);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.quick-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.quick-card strong {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.quick-card small {
+  color: #7a6150;
+  font-size: 12px;
+}
+
+.contact-info h3 span {
+  font-size: 13px;
+  color: #8a7564;
+  font-weight: 500;
+}
+
+.contact-info .contact-row {
+  grid-template-columns: 120px 1fr;
+}
+
+@media (max-width: 520px) {
+  .quick-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .quick-card {
+    min-height: 104px;
+    padding: 12px 8px;
+  }
+
+  .quick-card strong {
+    font-size: 15px;
+  }
+
+  .quick-card small {
+    font-size: 11px;
+  }
+
+  .contact-info h3 span {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .contact-info .contact-row {
+    grid-template-columns: 105px 1fr;
+  }
+}
