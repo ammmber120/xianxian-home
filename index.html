@@ -5,10 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>仙仙精選物件｜高雄買房賣房</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .hero{
+      padding:14px 16px 16px !important;
+      border-bottom-left-radius:22px !important;
+      border-bottom-right-radius:22px !important;
+    }
+    .compact-header{
+      width:min(100%,760px) !important;
+      margin:0 auto !important;
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:10px !important;
+    }
+    .compact-header .brand{
+      flex:1 !important;
+      min-width:0 !important;
+    }
+    .compact-header .brand h1{
+      font-size:22px !important;
+      line-height:1.15 !important;
+      margin:0 !important;
+    }
+    .compact-header .brand p{
+      font-size:13px !important;
+      line-height:1.35 !important;
+      margin-top:4px !important;
+    }
+    .top-line-btn{
+      flex:0 0 auto !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      min-width:92px !important;
+      padding:9px 12px !important;
+      border-radius:999px !important;
+      background:#9b714f !important;
+      color:#fff !important;
+      text-decoration:none !important;
+      font-size:13px !important;
+      font-weight:800 !important;
+      box-shadow:0 6px 14px rgba(93,63,42,.14) !important;
+      white-space:nowrap !important;
+    }
+    .hero-cta{display:none !important;}
+    main{padding-top:10px !important;}
+    .intro{margin-bottom:10px !important;}
+    .intro span{margin-bottom:2px !important;}
+    .intro h2{font-size:13px !important;}
+    .property-list{gap:10px !important;}
+    .card{
+      display:grid !important;
+      grid-template-columns:39% 61% !important;
+      border-radius:16px !important;
+      overflow:hidden !important;
+    }
+    .image-wrap{
+      height:100% !important;
+      min-height:145px !important;
+    }
+    .card-body{padding:9px 10px !important;}
+    .card h3{font-size:15px !important;line-height:1.32 !important;margin-bottom:3px !important;}
+    .location{font-size:11px !important;margin-bottom:4px !important;}
+    .price{font-size:19px !important;margin-bottom:6px !important;}
+    .tags{gap:4px !important;margin-bottom:6px !important;}
+    .tags span{font-size:10px !important;padding:4px 7px !important;}
+    .tags span:nth-child(n+3){display:none !important;}
+    .compact-info{
+      display:grid !important;
+      grid-template-columns:repeat(2,1fr) !important;
+      margin:6px 0 8px !important;
+    }
+    .compact-info div{padding:5px 2px !important;}
+    .compact-info div:nth-child(n+3){display:none !important;}
+    .compact-info small{font-size:9px !important;}
+    .compact-info strong{font-size:10px !important;}
+    .actions{display:grid !important;grid-template-columns:1fr !important;}
+    .detail-btn{display:none !important;}
+    .reserve-btn{padding:8px 10px !important;font-size:12px !important;}
+    .quick-links{
+      display:grid !important;
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+      gap:8px !important;
+      margin-top:12px !important;
+      width:100% !important;
+    }
+    .quick-card{
+      min-height:98px !important;
+      padding:12px 8px !important;
+      background:rgba(255,250,245,.94) !important;
+      border:1px solid rgba(216,192,172,.9) !important;
+      border-radius:16px !important;
+      box-shadow:0 8px 20px rgba(93,63,42,.08) !important;
+      text-decoration:none !important;
+      color:#5d3f2a !important;
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:center !important;
+      justify-content:center !important;
+      text-align:center !important;
+      gap:5px !important;
+    }
+    .quick-card:visited,.quick-card:hover,.quick-card:active{
+      color:#5d3f2a !important;
+      text-decoration:none !important;
+    }
+    .quick-icon{font-size:22px !important;display:block !important;line-height:1 !important;}
+    .quick-card strong{display:block !important;font-size:15px !important;letter-spacing:1px !important;color:#5d3f2a !important;}
+    .quick-card small{display:block !important;font-size:11px !important;color:#7a6150 !important;text-decoration:none !important;}
+    .contact-info{margin-top:12px !important;}
+    @media(max-width:390px){
+      .compact-header .brand h1{font-size:20px !important;}
+      .compact-header .brand p{font-size:12px !important;}
+      .top-line-btn{min-width:82px !important;font-size:12px !important;padding:8px 10px !important;}
+      .image-wrap{min-height:132px !important;}
+      .card h3{font-size:14px !important;}
+      .price{font-size:18px !important;}
+    }
+  </style>
+
 </head>
 <body>
   <header class="hero">
-    <div class="hero-top">
+    <div class="compact-header">
       <div class="brand">
         <div class="logo">仙仙</div>
         <div>
@@ -16,11 +137,8 @@
           <p>高雄買房賣房｜陪你找到理想的家</p>
         </div>
       </div>
+      <a class="top-line-btn" href="https://lin.ee/5v29GoQ" target="_blank">諮詢仙仙</a>
     </div>
-
-    <section class="hero-cta">
-      <a class="line-btn primary" href="https://lin.ee/5v29GoQ" target="_blank">立即諮詢仙仙</a>
-    </section>
   </header>
 
   <main>
@@ -37,7 +155,6 @@
         <strong>更多物件</strong>
         <small>前往品牌專區</small>
       </a>
-
       <a class="quick-card" href="https://lin.ee/5v29GoQ" target="_blank">
         <span class="quick-icon">💬</span>
         <strong>找仙仙聊聊</strong>

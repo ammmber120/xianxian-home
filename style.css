@@ -886,3 +886,30 @@ a.quick-card {
 .contact-info {
   clear: both !important;
 }
+
+
+/* V6 compact top button + fixed two-card quick links */
+.compact-header{
+  width:min(100%,760px);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.top-line-btn{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:92px;
+  padding:9px 12px;
+  border-radius:999px;
+  background:var(--coffee);
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.hero-cta{display:none;}
