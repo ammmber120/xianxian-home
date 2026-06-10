@@ -10,36 +10,29 @@ const properties = [
     id: "p1",
     status: true,
     no: "NO.1",
-    title: "文化中心/科工館/雙商圈低總價公寓4樓",
-    location: "苓雅區｜近科工館",
-    price: "586 萬",
-    tags: ["邊間採光佳", "鄰近學區"],
-    cover: "images/A/01.jpg",
+    title: "農十六・景觀四房雙平車",
+    location: "鼓山區｜近凹子底森林公園",
+    price: "3,680 萬",
+    tags: ["景觀視野", "雙平面車位", "永久棟距"],
+    cover: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "images/A/01.jpg",
-      "images/A/02.jpg",
-      "images/A/03.jpg",
-      "images/A/04.jpg",
-      "images/A/05.jpg",
-      "images/A/06.jpg",
-      "images/A/07.jpg",
-      "images/A/08.jpg",
-      "images/A/09.jpg",
-      "images/A/10.jpg"
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
     ],
     info: {
-      坪數: "25.62坪",
-      格局: "3房2廳1衛",
-      樓層: "4/4F",
-      車位: "無",
-      類型: "公寓",
+      坪數: "78.65坪",
+      格局: "4房2廳2衛",
+      樓層: "15/24F",
+      車位: "雙平車",
+      類型: "大樓",
       屋齡: "依謄本為準"
     },
     points: [
-      "苓雅核心生活圈，機能成熟",
-      "邊間格局擁有雙面採光優勢",
-      "低總價＋市區地段，具備穩定出租需求",
-      "學區完整，家長接送方便"
+      "農十六特區核心地段，生活機能成熟",
+      "高樓層景觀戶，採光通風佳",
+      "室內空間方正，家庭成長首選",
+      "社區質感佳，公設完善，管理嚴謹"
     ],
     note: "資料僅供參考，實際資訊依現場與謄本為準。"
   },
@@ -47,20 +40,18 @@ const properties = [
     id: "p2",
     status: true,
     no: "NO.2",
-    title: "請輸入物件名稱",
-    location: "行政區｜簡介",
+    title: "美術館特區・質感三房平車",
+    location: "鼓山區｜美術館生活圈",
     price: "1,988 萬",
     tags: ["質感裝潢", "邊間採光", "生活機能佳"],
-    cover: "images/B/01.jpg",
+    cover: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "images/B/01.jpg",
-      "images/B/02.jpg",
-      "images/B/03.jpg",
-      "images/B/04.jpg",
-      "images/B/05.jpg"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80"
     ],
     info: {
-      坪數: "00.00坪",
+      坪數: "45.32坪",
       格局: "3房2廳2衛",
       樓層: "8/15F",
       車位: "平面車位",
@@ -68,10 +59,10 @@ const properties = [
       屋齡: "依謄本為準"
     },
     points: [
-      "物件簡介1",
-      "物件簡介2",
-      "物件簡介3",
-      "物件簡介4"
+      "美術館生活圈，環境舒適有質感",
+      "格局方正，室內好規劃",
+      "採光明亮，適合首購與小家庭",
+      "近公園、商圈，生活採買便利"
     ],
     note: "資料僅供參考，實際資訊依現場與謄本為準。"
   },
@@ -79,18 +70,18 @@ const properties = [
     id: "p3",
     status: true,
     no: "NO.3",
-    title: "請輸入物件名稱",
-    location: "行政區｜簡介",
+    title: "巨蛋商圈・精品三房平車",
+    location: "左營區｜近巨蛋捷運站",
     price: "1,598 萬",
     tags: ["近捷運站", "屋齡新", "精緻裝潢"],
-   cover: "images/C/01.jpg",
+    cover: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
     images: [
-      "images/A/01.jpg",
-      "images/A/02.jpg",
-      "images/A/03.jpg"
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
     ],
     info: {
-      坪數: "00.00坪",
+      坪數: "32.14坪",
       格局: "3房2廳1衛",
       樓層: "6/14F",
       車位: "平面車位",
@@ -98,10 +89,10 @@ const properties = [
       屋齡: "依謄本為準"
     },
     points: [
-      "物件簡介1",
-      "物件簡介2",
-      "物件簡介3",
-      "物件簡介4"
+      "近捷運、百貨商圈，生活便利",
+      "屋齡新，公設與管理維護佳",
+      "適合小家庭、首購族群",
+      "總價帶漂亮，市場詢問度高"
     ],
     note: "資料僅供參考，實際資訊依現場與謄本為準。"
   }

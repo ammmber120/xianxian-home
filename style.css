@@ -990,3 +990,204 @@ a.quick-card {
   color:var(--brown);
   font-weight:900;
 }
+
+
+/* V9: desktop layout. Mobile stays the same; desktop switches automatically. */
+@media (min-width: 900px) {
+  body {
+    background: linear-gradient(180deg, #fffaf4 0%, #f8eee5 100%);
+  }
+
+  .hero {
+    padding: 18px 28px !important;
+    border-bottom-left-radius: 28px !important;
+    border-bottom-right-radius: 28px !important;
+  }
+
+  .compact-header {
+    width: min(1180px, 100%) !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .compact-header .brand h1 {
+    font-size: 28px !important;
+  }
+
+  .compact-header .brand p {
+    font-size: 15px !important;
+  }
+
+  .top-line-btn {
+    min-width: 132px !important;
+    padding: 11px 20px !important;
+    font-size: 15px !important;
+  }
+
+  main {
+    width: min(1180px, 100%) !important;
+    padding: 22px 28px 80px !important;
+  }
+
+  .intro {
+    margin: 10px 0 22px !important;
+  }
+
+  .intro span {
+    font-size: 24px !important;
+  }
+
+  .intro h2 {
+    font-size: 16px !important;
+  }
+
+  .property-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .card {
+    display: block !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  .image-wrap {
+    height: 230px !important;
+    min-height: 230px !important;
+  }
+
+  .card-body {
+    padding: 18px !important;
+  }
+
+  .title-area h3 {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    min-height: 54px !important;
+  }
+
+  .title-area .location {
+    font-size: 13px !important;
+    margin-top: 5px !important;
+  }
+
+  .tags-price-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+  }
+
+  .tags-price-row .tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .tags-price-row .tags span {
+    display: inline-block !important;
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  .tags-price-row .price {
+    text-align: left !important;
+    font-size: 28px !important;
+    margin-top: 2px !important;
+  }
+
+  .compact-info {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin: 12px 0 14px !important;
+  }
+
+  .compact-info div {
+    display: block !important;
+    padding: 10px 4px !important;
+  }
+
+  .compact-info small {
+    font-size: 12px !important;
+  }
+
+  .compact-info strong {
+    font-size: 13px !important;
+  }
+
+  .actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  .detail-btn {
+    display: block !important;
+  }
+
+  .reserve-btn,
+  .detail-btn {
+    padding: 12px 14px !important;
+    font-size: 14px !important;
+  }
+
+  .quick-links {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    margin-top: 22px !important;
+  }
+
+  .quick-card {
+    min-height: 132px !important;
+    border-radius: 22px !important;
+  }
+
+  .quick-icon {
+    font-size: 30px !important;
+  }
+
+  .quick-card strong {
+    font-size: 20px !important;
+  }
+
+  .quick-card small {
+    font-size: 14px !important;
+  }
+
+  .contact-info {
+    margin-top: 22px !important;
+    padding: 24px 28px !important;
+  }
+
+  .contact-info h3 {
+    font-size: 22px !important;
+  }
+
+  .contact-info .contact-row {
+    grid-template-columns: 160px 1fr !important;
+  }
+
+  .detail-hero {
+    height: 430px !important;
+  }
+
+  .detail-card {
+    padding: 28px !important;
+  }
+
+  .detail-card h2 {
+    font-size: 32px !important;
+  }
+
+  .detail-info {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
