@@ -300,8 +300,10 @@
   <footer>
     © 2026 仙仙精選物件 All Rights Reserved.
   </footer>
-
-  <script src="properties.js?v=20260610"></script>
-  <script src="script.js?v=20260610"></script>
+  <script>
+    const CACHE_VERSION = Date.now();
+    document.write('<script src="properties.js?v=' + CACHE_VERSION + '"><\/script>');
+    document.write('<script src="script.js?v=' + CACHE_VERSION + '"><\/script>');
+  </script>
 </body>
 </html>
