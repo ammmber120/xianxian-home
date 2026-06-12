@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>仙仙精選物件｜高雄買房賣房</title>
-<!-- BUILD_VERSION: 20260612a -->
   <link rel="stylesheet" href="style.css?v=20260610" />
 
   <style>
@@ -125,6 +124,24 @@
       .card h3{font-size:14px !important;}
       .price{font-size:18px !important;}
     }
+  
+    .logo-img{
+      width:52px !important;
+      height:52px !important;
+      border-radius:50% !important;
+      object-fit:cover !important;
+      border:1px solid #9b714f !important;
+      background:#fffaf5 !important;
+      flex:0 0 auto !important;
+      display:block !important;
+    }
+    @media(max-width:390px){
+      .logo-img{
+        width:46px !important;
+        height:46px !important;
+      }
+    }
+
   </style>
 
 
@@ -261,7 +278,7 @@
   <header class="hero">
     <div class="compact-header">
       <div class="brand">
-        <div class="logo">仙仙</div>
+        <img class="logo-img" src="images/logo.jpg?v=20260612logo" alt="仙仙精選物件 Logo">
         <div>
           <h1>仙仙精選物件</h1>
           <p>高雄買房賣房｜陪你找到理想的家</p>
@@ -285,7 +302,7 @@
         <strong>更多物件</strong>
         <small>前往品牌專區</small>
       </a>
-      <a class="quick-card" href="guide.html?v=20260612a">
+      <a class="quick-card" href="guide.html?v=20260612logo">
         <span class="quick-icon">📖</span>
         <strong>購屋指南</strong>
         <small></small>

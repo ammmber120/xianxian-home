@@ -4,14 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>物件詳情｜仙仙精選物件</title>
-<!-- BUILD_VERSION: 20260612a -->
-  <link rel="stylesheet" href="style.css?v=20260612a" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .logo-img{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      object-fit:cover;
+      border:1px solid #9b714f;
+      background:#fffaf5;
+      flex:0 0 auto;
+      display:block;
+    }
+    .brand.small .logo-img{
+      width:50px;
+      height:50px;
+    }
+    @media(max-width:520px){
+      .logo-img,
+      .brand.small .logo-img{
+        width:46px;
+        height:46px;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <header class="detail-header">
     <a href="index.html" class="back-link">← 回精選物件</a>
     <div class="brand small">
-      <div class="logo">仙仙</div>
+      <img class="logo-img" src="images/logo.jpg?v=20260612logo" alt="仙仙精選物件 Logo">
       <div>
         <h1>仙仙精選物件</h1>
         <p>陪你找到理想的家</p>
