@@ -75,9 +75,9 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 <div class="guide-layout">
 <aside class="sidebar"><div class="sidebar-head"><strong>購屋知識專區</strong><small>點選分類，快速查看需要的資訊。</small></div><div class="cat-list" id="desktopCats"></div></aside>
 <section class="content">
-<h3 id="contentTitle">買賣應備文件</h3><p class="desc" id="contentDesc">買賣房屋前先確認應備資料與常見支付項目，流程會更順利。</p>
+<h3 id="contentTitle">買賣應備文件</h3><p class="desc" id="contentDesc">買賣房屋前先確認應備資料，流程會更順利。</p>
 <div id="documentsContent">
-<div class="subtabs"><button class="subtab active" data-sub="buyerDocs">買方應備文件</button><button class="subtab" data-sub="buyerPay">買方支付項目</button><button class="subtab" data-sub="sellerPay">賣方支付項目</button></div>
+
 <div class="panel active" id="buyerDocs">
 <div class="doc-grid">
 <article class="doc-card"><h4>一、買方應備基本文件</h4><p><strong>身分證影本：</strong>正反面清楚影本。<br><strong>普通章：</strong>供簽約、過戶及銀行對保相關使用；如需代刻印章，應另取得授權。<br><strong>個人戶籍謄本一份：</strong>曾更名者記事欄不可省略；或依地政士、銀行要求提供影本。</p></article>
@@ -163,11 +163,10 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 </section></div></main>
 <footer>© 2026 仙仙精選物件 All Rights Reserved.</footer>
 <script>
-const categories=[{id:"docs",label:"買賣應備文件",desc:"買賣房屋前先確認應備資料與常見支付項目，流程會更順利。"},{id:"cat2",label:"主分類2",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat3",label:"主分類3",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat4",label:"主分類4",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat5",label:"主分類5",desc:"此分類內容先保留空白，之後可依需求補上。"}];
+const categories=[{id:"docs",label:"買賣應備文件",desc:"買賣房屋前先確認應備資料，流程會更順利。"},{id:"buyerPayCat",label:"買方支付項目",desc:"買方常見支付項目與費用說明，實際金額仍依契約、機關與地政士確認為準。"},{id:"sellerPayCat",label:"賣方支付項目",desc:"賣方常見支付項目與費用說明，實際金額仍依契約、機關與地政士確認為準。"},{id:"cat4",label:"主分類4",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat5",label:"主分類5",desc:"此分類內容先保留空白，之後可依需求補上。"}];
 const desktopCats=document.getElementById("desktopCats"),mobileCats=document.getElementById("mobileCats"),contentTitle=document.getElementById("contentTitle"),contentDesc=document.getElementById("contentDesc"),documentsContent=document.getElementById("documentsContent"),emptyContent=document.getElementById("emptyContent"),emptyTitle=document.getElementById("emptyTitle");
 function renderCategoryButtons(){const html=categories.map((cat,i)=>`<button class="cat-btn ${i===0?"active":""}" data-cat="${cat.id}"><span>${cat.label}</span><span>›</span></button>`).join("");desktopCats.innerHTML=html;mobileCats.innerHTML=html;document.querySelectorAll(".cat-btn").forEach(btn=>btn.addEventListener("click",()=>switchCategory(btn.dataset.cat)))}
-function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;if(id==="docs"){documentsContent.style.display="block";emptyContent.style.display="none"}else{documentsContent.style.display="none";emptyContent.style.display="block";emptyTitle.textContent=cat.label}}
-document.querySelectorAll(".subtab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".subtab").forEach(b=>b.classList.remove("active"));document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));btn.classList.add("active");document.getElementById(btn.dataset.sub).classList.add("active")}));
+function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));documentsContent.style.display="block";emptyContent.style.display="none";if(id==="docs"){document.getElementById("buyerDocs").classList.add("active")}else if(id==="buyerPayCat"){document.getElementById("buyerPay").classList.add("active")}else if(id==="sellerPayCat"){document.getElementById("sellerPay").classList.add("active")}else{documentsContent.style.display="none";emptyContent.style.display="block";emptyTitle.textContent=cat.label}}
 renderCategoryButtons();
 </script>
 </body></html>
