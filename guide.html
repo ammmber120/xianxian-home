@@ -95,8 +95,6 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 <article class="doc-card full-card"><h4>五、貸款須知與信用管制提醒</h4><p>央行信用管制及各銀行授信政策會隨時調整；僅提醒，非保證核貸條件，實際依照銀行規定。<br><br><strong>自然人第 2 戶購屋貸款：</strong>最高貸款成數 6 成，無寬限期。<br><strong>自然人第 3 戶以上購屋貸款：</strong>最高貸款成數 3 成，無寬限期。<br><strong>購置高價住宅貸款：</strong>最高貸款成數 3 成，無寬限期。高價住宅門檻：臺北市 7,000 萬元、新北市 6,000 萬元、其他地區 4,000 萬元。<br><strong>公司法人購置住宅貸款：</strong>最高貸款成數 3 成，無寬限期。<br><br><strong>信用不良紀錄：</strong>信用卡催收、強制停卡、呆帳、房貸延遲、支票退票或拒絕往來、短期內多家金融機構查詢信用、債務協商等，均可能影響核貸。※保證人亦同。<br><strong>負債比過高：</strong>房貸、信貸、車貸、保證債務、現金卡、信用卡長期循環等，均可能影響貸款額度及利率。</p></article>
 </div>
 </div>
-<div class="hint red-warning">本文件僅供簡易說明使用，正式簽約或送件前，請由配合地政士及銀行窗口逐案確認。</div>
-
 <div class="panel" id="buyerPay">
 <div class="doc-grid">
 
@@ -131,8 +129,6 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 </div>
 
 </div>
-<div class="hint red-warning">本文件僅供簡易說明使用，正式簽約或送件前，請由配合地政士及銀行窗口逐案確認。</div>
-
 <div class="panel" id="sellerPay">
 <div class="doc-grid">
 <article class="doc-card"><h4>1. 土地增值稅</h4><p>依稅捐稽徵機關核定之土地增值稅稅額繳納。<br><span class="light-note">如遇跨年度公告土地現值調整，建議洽經紀業人員或地政士重新概算。</span><br>土地所有權移轉時，買賣雙方應於訂定契約之日起 30 日內申報土地移轉現值。<br><span class="light-note">自用住宅用地稅率、重購退稅、免徵或不課徵等優惠條件，依個案條件及稅捐機關認定為準。</span></p></article>
@@ -159,17 +155,16 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 </div>
 </div>
 </div>
-<div class="hint red-warning">本文件僅供簡易說明使用，正式簽約或送件前，請由配合地政士及銀行窗口逐案確認。</div>
-
+<div id="globalWarning" class="hint red-warning">本文件僅供簡易說明使用，正式簽約或送件前，請由配合地政士及銀行窗口逐案確認。</div>
 <div id="emptyContent" style="display:none;"><div class="empty"><strong id="emptyTitle">主分類</strong>此分類內容先保留空白，之後可再補上購屋流程、貸款試算、稅費說明或常見問題。</div></div>
 <section class="cta"><div><h4>看不懂文件怎麼準備？</h4><p>歡迎直接傳訊息詢問，仙仙可以協助你一步一步確認。</p></div><a href="https://lin.ee/5v29GoQ" target="_blank">LINE 詢問</a></section>
 </section></div></main>
 <footer>© 2026 仙仙精選物件 All Rights Reserved.</footer>
 <script>
 const categories=[{id:"docs",label:"買賣應備文件",desc:"買賣房屋前先確認應備資料，流程會更順利。"},{id:"buyerPayCat",label:"買方支付項目",desc:"買方常見支付項目與費用說明，實際金額仍依契約、機關與地政士確認為準。"},{id:"sellerPayCat",label:"賣方支付項目",desc:"賣方常見支付項目與費用說明，實際金額仍依契約、機關與地政士確認為準。"},{id:"cat4",label:"主分類4",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat5",label:"主分類5",desc:"此分類內容先保留空白，之後可依需求補上。"}];
-const desktopCats=document.getElementById("desktopCats"),mobileCats=document.getElementById("mobileCats"),contentTitle=document.getElementById("contentTitle"),contentDesc=document.getElementById("contentDesc"),documentsContent=document.getElementById("documentsContent"),emptyContent=document.getElementById("emptyContent"),emptyTitle=document.getElementById("emptyTitle");
+const desktopCats=document.getElementById("desktopCats"),mobileCats=document.getElementById("mobileCats"),contentTitle=document.getElementById("contentTitle"),contentDesc=document.getElementById("contentDesc"),documentsContent=document.getElementById("documentsContent"),emptyContent=document.getElementById("emptyContent"),emptyTitle=document.getElementById("emptyTitle"),globalWarning=document.getElementById("globalWarning");
 function renderCategoryButtons(){const html=categories.map((cat,i)=>`<button class="cat-btn ${i===0?"active":""}" data-cat="${cat.id}"><span>${cat.label}</span><span>›</span></button>`).join("");desktopCats.innerHTML=html;mobileCats.innerHTML=html;document.querySelectorAll(".cat-btn").forEach(btn=>btn.addEventListener("click",()=>switchCategory(btn.dataset.cat)))}
-function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));documentsContent.style.display="block";emptyContent.style.display="none";if(id==="docs"){document.getElementById("buyerDocs").classList.add("active")}else if(id==="buyerPayCat"){document.getElementById("buyerPay").classList.add("active")}else if(id==="sellerPayCat"){document.getElementById("sellerPay").classList.add("active")}else{documentsContent.style.display="none";emptyContent.style.display="block";emptyTitle.textContent=cat.label}}
+function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));documentsContent.style.display="block";emptyContent.style.display="none";globalWarning.style.display="block";if(id==="docs"){document.getElementById("buyerDocs").classList.add("active")}else if(id==="buyerPayCat"){document.getElementById("buyerPay").classList.add("active")}else if(id==="sellerPayCat"){document.getElementById("sellerPay").classList.add("active")}else{documentsContent.style.display="none";emptyContent.style.display="block";globalWarning.style.display="none";emptyTitle.textContent=cat.label}}
 renderCategoryButtons();
 </script>
 </body></html>
