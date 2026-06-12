@@ -28,133 +28,30 @@ a{text-decoration:none;color:inherit}
 .cta{margin-top:18px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;background:linear-gradient(135deg,#fffaf5,#f1dfd0);border:1px solid var(--line);border-radius:20px;padding:18px}.cta h4{margin:0 0 4px;font-size:20px}.cta p{margin:0;color:var(--muted);line-height:1.6}.cta a{background:var(--coffee);color:#fff;padding:12px 18px;border-radius:999px;font-weight:900;white-space:nowrap}
 footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 @media(max-width:760px){.topbar-inner{padding:12px 14px}.logo{width:44px;height:44px;font-size:13px}.brand h1{font-size:20px}.brand p{font-size:12px}.line-btn{font-size:13px;padding:9px 12px}.page{padding:18px 12px 70px}.page-title{margin-top:2px;margin-bottom:16px}.page-title h2{font-size:28px}.guide-layout{display:block}.sidebar{display:none}.mobile-cats{display:flex}.content{padding:18px;border-radius:20px;min-height:auto}.content h3{font-size:26px}.desc{font-size:14px;margin-bottom:16px}.subtabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.subtabs::-webkit-scrollbar{display:none}.subtab{flex:0 0 auto}.doc-grid{grid-template-columns:1fr;gap:10px}.doc-card{padding:14px}.doc-card h4{font-size:17px}.cta{grid-template-columns:1fr}.cta a{text-align:center}}
-.mini-note{display:block;color:#8a7564;font-size:13px;line-height:1.6}.doc-card strong{color:var(--brown)}
-.doc-card h5{
-  margin:0 0 10px;
-  font-size:16px;
-  color:#9b714f;
-  letter-spacing:.5px;
-}
-.full-card{
-  grid-column:1 / -1;
-}
-.loan-card h4{
-  margin-bottom:6px;
-}
-@media(max-width:760px){
-  .full-card{
-    grid-column:auto;
-  }
-}
-
-.light-note{
-  color:#a89382 !important;
-  font-size:13px;
-  line-height:1.65;
-}
-.red-warning{
-  color:#c0392b !important;
-  font-weight:900;
-  background:#fff4f1;
-  border-color:#e6b7ae !important;
-}
-.page-title h2{margin-top:0}
-.center-card{
-  text-align:center;
-}
-.center-card h4{
-  justify-content:center;
-}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html"><div class="logo">仙仙</div><div><h1>仙仙精選物件</h1><p>高雄買房賣房｜陪你找到理想的家</p></div></a><a class="line-btn" href="https://lin.ee/5v29GoQ" target="_blank">LINE 諮詢</a></div></header>
 <main class="page">
-<section class="page-title"><h2>購屋指南</h2></section>
+<section class="page-title"><span>BUYER GUIDE</span><h2>購屋指南</h2></section>
 <div class="mobile-cats" id="mobileCats"></div>
 <div class="guide-layout">
 <aside class="sidebar"><div class="sidebar-head"><strong>購屋知識專區</strong><small>點選分類，快速查看需要的資訊。</small></div><div class="cat-list" id="desktopCats"></div></aside>
 <section class="content">
-<h3 id="contentTitle">買賣應備文件</h3><p class="desc" id="contentDesc">買賣房屋前先確認應備資料與常見支付項目，流程會更順利。</p>
+<div class="section-label" id="sectionLabel">CATEGORY 01</div><h3 id="contentTitle">買賣應備文件</h3><p class="desc" id="contentDesc">買賣房屋前先確認應備資料與常見支付項目，流程會更順利。</p>
 <div id="documentsContent">
 <div class="subtabs"><button class="subtab active" data-sub="buyerDocs">買方應備文件</button><button class="subtab" data-sub="buyerPay">買方支付項目</button><button class="subtab" data-sub="sellerPay">賣方支付項目</button></div>
 <div class="panel active" id="buyerDocs">
 <div class="doc-grid">
-<article class="doc-card"><h4>一、買方應備基本文件</h4><p><strong>身分證影本：</strong>正反面清楚影本。<br><strong>普通章：</strong>供簽約、過戶及銀行對保相關使用；如需代刻印章，應另取得授權。<br><strong>個人戶籍謄本一份：</strong>曾更名者記事欄不可省略；或依地政士、銀行要求提供影本。</p></article>
-
-<article class="doc-card loan-card"><h4>二、若需要貸款，應備妥文件（保人亦同）</h4><h5>1. 有固定工作者</h5><p>1. 薪資轉帳存摺影本（封面內頁半年以上，需補登至近日）<br>2. 所得清單或扣繳憑單／薪資所得證明（依銀行要求）<br>3. 財產清單<br><span class="light-note">4. 在職證明或勞保投保資料（銀行要求時）</span><br><br><span class="mini-note light-note">首購、青安或銀行徵信需要時，所得清單與財產清單通常會被要求提供。</span></p></article>
-
-<article class="doc-card loan-card"><h4>二、若需要貸款，應備妥文件（保人亦同）</h4><h5>2. 無扣繳憑單／自由業／領現金者</h5><p>1. 公司識別證及在職證明書（能提供者，建議註明薪資金額）<br>2. 存摺影本（封面及內頁半年以上，需補登至近日）<br>3. 所得清單、財產清單（依銀行要求）<br>4. 三個月以上薪水袋或收入證明(定存單、不動產權狀、基金、股票、保單等財力證明)<br><br><span class="mini-note light-note">收入來源較難由薪轉判斷者，銀行通常會要求更多財力、收入穩定性或往來紀錄佐證。</span></p></article>
-
-<article class="doc-card loan-card"><h4>二、若需要貸款，應備妥文件（保人亦同）</h4><h5>3. 自營商／公司負責人</h5><p>1. 公司變更登記事項卡或商業登記資料影本<br>2. 近一年 401 報表、資產負債表或損益表（依銀行要求）<br>3. 公司存摺影本（封面及內頁半年以上，需補登至近日）<br><span class="light-note">4. 個人所得清單及財產清單</span><br><br><span class="mini-note light-note">公司與個人財務可能分開審查，實際依承貸銀行徵信條件辦理。</span></p></article>
-
-<article class="doc-card full-card"><h4>三、青年安心成家購屋優惠貸款 1131217版</h4><p><strong>基本資格方向：</strong>借款人本人、配偶及未成年子女名下均無自有住宅者；單身本人名下是否無自有住宅。<br><strong>最高額度及成數：</strong>目前貸款最高額度為壹仟萬元、最高成數 8 成；是否核貸及金額仍以銀行審核為準。<br><strong>利率提醒：</strong>政府補貼及公股銀行減收期間至 115 年 7 月 31 日止；未來如主管機關調整，再即時更新。<br><br><strong>青安目前利率（併計補貼後）</strong><br>一段式機動：1.775% <span class="light-note">※110年1月1日起新貸放案件適用，至11507月底前。</span><br>二段式機動：前 2 年 1.565%；第 3 年起 1.865%。<br>混合式固定：第 1 年 1.745%；第 2 年 1.845%；第 3 年起 1.865%。<span class="light-note">※前 2 年固定，第 3 年起機動。</span></p></article>
-
-<article class="doc-card full-card"><h4>四、公務人員及國軍優惠貸款 1131217版</h4><p><strong>公務人員優惠貸款：</strong>正式在職證明書、所得清單、財產清單、其他承貸銀行要求文件。<br><br><strong>國軍優惠貸款：</strong>軍人證、餉條或薪資證明、薪轉存摺影本（封面及內頁半年以上，補登至近日）、所得清單、財產清單。</p></article>
-
-<article class="doc-card full-card"><h4>五、貸款須知與信用管制提醒</h4><p>央行信用管制及各銀行授信政策會隨時調整；僅提醒，非保證核貸條件，實際依照銀行規定。<br><br><strong>自然人第 2 戶購屋貸款：</strong>最高貸款成數 6 成，無寬限期。<br><strong>自然人第 3 戶以上購屋貸款：</strong>最高貸款成數 3 成，無寬限期。<br><strong>購置高價住宅貸款：</strong>最高貸款成數 3 成，無寬限期。高價住宅門檻：臺北市 7,000 萬元、新北市 6,000 萬元、其他地區 4,000 萬元。<br><strong>公司法人購置住宅貸款：</strong>最高貸款成數 3 成，無寬限期。<br><br><strong>信用不良紀錄：</strong>信用卡催收、強制停卡、呆帳、房貸延遲、支票退票或拒絕往來、短期內多家金融機構查詢信用、債務協商等，均可能影響核貸。※保證人亦同。<br><strong>負債比過高：</strong>房貸、信貸、車貸、保證債務、現金卡、信用卡長期循環等，均可能影響貸款額度及利率。</p></article>
+<article class="doc-card"><h4>🪪 身分證件</h4><p>身分證正本、健保卡或第二證件。辦理簽約、用印、過戶及銀行貸款時通常會需要核對身分。</p></article>
+<article class="doc-card"><h4>🔖 印章</h4><p>建議準備個人印章。若案件涉及特定登記或銀行流程，是否需印鑑章與印鑑證明，請依代書或銀行通知為準。</p></article>
+<article class="doc-card"><h4>🏦 貸款相關資料</h4><p>若需辦理房貸，常見會需要收入證明、扣繳憑單、薪轉存摺、在職證明或其他財力證明。</p></article>
+<article class="doc-card"><h4>👥 特殊身分資料</h4><p>若由代理人辦理、未成年人、法人購屋或其他特殊情況，可能需另備委託書、戶籍資料、公司文件等。</p></article>
 </div>
-<div class="hint red-warning">本文件僅供簡易說明使用，正式簽約或送件前，請由配合地政士及銀行窗口逐案確認。</div>
+<div class="hint">※ 我目前沒有在可搜尋檔案中找到「代書資料審查分析最終版」，所以先放置買方應備文件草稿。之後若你上傳或貼上最終版內容，我可以再完全替換成正式文字。</div>
 </div>
-<div class="panel" id="buyerPay">
-<div class="doc-grid">
-
-
-<article class="doc-card"><h4>1. 契稅</h4><p>依建物核定契價 × 6% 計算。<br>土地部分如屬已課徵土地增值稅區域，免徵契稅；實際稅額以稅捐機關核定為準。</p></article>
-
-<article class="doc-card"><h4>2. 簽約及過戶代書費</h4><p>簽約手續費：1,000 元。<br>過戶代書費：一筆土地、一棟建物 14,000 元。<br>土地每增加一筆加收 1,000 元；建物每增加一棟加收 2,000 元。<br><span class="light-note">房屋或土地坐落區段分屬不同地政事務所，代書費需另行計算。</span></p></article>
-
-<article class="doc-card"><h4>3. 貸款相關費用</h4><p>若需辦理銀行貸款，銀行貸款手續費、徵信費、開辦費等依各銀行規定收取。<br>每筆抵押權設定代書費：5,000 元。<br><span class="light-note">抵押權設定規費、火險及地震險費用，依實際發生單據支付。</span></p></article>
-
-<article class="doc-card"><h4>4. 地價稅分算</h4><p>交屋時通常依買賣契約約定，以交屋日或約定基準日按比例分算。<br>課稅地價 = 申報地價 × 面積 × 權利範圍。<br>地價稅額 = 課稅地價 × 適用稅率。<br><span class="light-note">一般地價稅稅率會依土地條件及稅捐機關核定計算；符合自用住宅用地條件者，得適用千分之二。實際稅額以稅單為準。</span></p></article>
-
-<article class="doc-card"><h4>5. 房屋稅分算</h4><p>交屋時通常依買賣契約約定，以交屋日或約定基準日按比例分算。<br>房屋稅依房屋現值、使用情形及地方政府公告稅率計算。<br><span class="light-note">住家用房屋會因自住、出租申報租金達標、待銷、非自住等情形適用不同稅率；實際稅額以稅捐機關核發稅單為準。</span></p></article>
-
-<article class="doc-card"><h4>6. 登記規費（不含書狀費）</h4><p>買賣登記規費 =（土地申報地價總額 + 建物核定契價）× 1/1000。<br>抵押權設定登記規費 = 抵押權設定金額 × 1/1000。<br><span class="light-note">例：土地申報地價總額 1,000,000 元，建物核定契價 372,100 元，抵押權設定金額 5,000,000 元，登記規費約為：（1,000,000 + 372,100 + 5,000,000）× 1/1000 = 6,372.1 元。書狀費及其他規費依地政機關實際核算為準。</span></p></article>
-
-<article class="doc-card"><h4>7. 印花稅</h4><p>申辦不動產移轉登記使用之契據，依契據所載金額 × 1/1000 計算。<br><span class="light-note">例：土地移轉現值 6,000,000 元，建物移轉現值 372,100 元，印花稅約為：（6,000,000 + 372,100）× 1/1000 = 6,372.1 元。實際貼花或繳納方式及金額依稅捐機關認定為準。</span></p></article>
-
-<article class="doc-card"><h4>8. 火險、地震險</h4><p>若買方以金融機構貸款購屋，通常需投保住宅火險及地震基本保險。<br><span class="light-note">保險金額、期間及保費依承貸銀行與保險公司規定辦理。</span></p></article>
-
-<article class="doc-card"><h4>9. 公證費</h4><p>一般成屋買賣非必然需要公證。<br><span class="light-note">若買賣雙方另行約定辦理公證，依公證費用標準及契約約定負擔。</span></p></article>
-
-<article class="doc-card"><h4>10. 工程受益費</h4><p>簽約前已公告徵收之工程受益費，原則由賣方負責繳納。<br>未到期之工程受益費，除買方願出具續繳承諾書外，原則由賣方繳清後辦理移轉登記。<br><span class="light-note">因為附近有公共工程的實施，使您的不動產受益，政府主觀認定您的不動產有因為工程之實施而增加價值，就會向土地所有權人徵收工程受益費。</span><br><span class="light-note">如契約另有約定，依買賣雙方約定辦理。</span></p></article>
-
-<article class="doc-card"><h4>11. 實價登錄代辦服務費</h4><p>每一收件文號 1,000 元。<br><span class="light-note">此為委任代辦服務費，非政府固定規費；買賣雙方負擔方式依契約或委任約定辦理。</span></p></article>
-
-<article class="doc-card"><h4>12. 仲介服務費</h4><p>依委託契約、買賣契約或雙方約定收取。<br>本表若採買方 2% 計算，應於相關契約文件明確約定。<br><span class="light-note">依法規精神，不動產經紀業應依實際成交價金及主管機關規定之報酬標準計收，並不得收取差價或其他未約定報酬。</span></p></article>
-
-<article class="doc-card"><h4>13. 交屋後相關費用</h4><p>自交屋日或契約約定基準日起，水費、電費、瓦斯費、管理費、停車管理費、網路電話等通常由買方負擔。<br><span class="light-note">實際分算方式依買賣契約、社區規約及交屋結算單為準。</span></p></article>
-
-<article class="doc-card full-card"><h4>附註</h4><p>1. 土地鑑界、複丈、建物測量等地政規費，依申請當時主管機關收費標準及地政機關核算為準；代辦費另依委任約定收取。<br>2. 以上項目為一般原則，若買賣雙方於契約中另有約定，依契約約定辦理。<br>3. 稅率、規費、貸款條件及承作規定可能因法令或政策調整而變動，正式簽約或送件前應再次確認。<br>4. 本文件僅供一般買賣流程與費用項目說明使用；正式簽約、送件、貸款、稅費及規費仍以買賣契約、主管機關、稅捐機關、地政機關、承貸銀行及地政士／代書確認為準。</p></article>
-</div>
-
-</div>
-<div class="panel" id="sellerPay">
-<div class="doc-grid">
-<article class="doc-card"><h4>1. 土地增值稅</h4><p>依稅捐稽徵機關核定之土地增值稅稅額繳納。<br><span class="light-note">如遇跨年度公告土地現值調整，建議洽經紀業人員或地政士重新概算。</span><br>土地所有權移轉時，買賣雙方應於訂定契約之日起 30 日內申報土地移轉現值。<br><span class="light-note">自用住宅用地稅率、重購退稅、免徵或不課徵等優惠條件，依個案條件及稅捐機關認定為準。</span></p></article>
-
-<article class="doc-card"><h4>2. 工程受益費</h4><p>簽約前已公告確定之工程受益費（含緩徵）原則由賣方繳納。<br>其有未到期之工程受益費，除買方願出具續繳承諾書外，原則由賣方負擔繳納；並於繳清費用後，或由買方承諾到期繳清後，辦理產權移轉登記手續。<br><span class="light-note">簡單說，因附近有公共工程實施，使不動產受益，主管機關依法認定不動產因工程實施而增加價值時，可能向直接受益之土地及改良物所有權人徵收工程受益費。</span></p></article>
-
-<article class="doc-card"><h4>3. 交屋前相關費用</h4><p>交屋日前或契約約定基準日前之房屋稅、地價稅、水費、電費、瓦斯費、管理費、電話費、網路費、停車管理費等，通常由賣方負擔。<br>房屋稅、地價稅如需按比例分算，依買賣契約約定及稅捐機關核發稅單為準。<br><span class="light-note">實際結清項目與分算日期，請以交屋結算單及雙方契約約定確認。</span></p></article>
-
-<article class="doc-card"><h4>4. 簽約手續費</h4><p>簽約手續費：1,000 元。<br><span class="light-note">如契約另有約定或個案另有特殊代辦事項，依實際約定辦理。</span></p></article>
-
-<article class="doc-card"><h4>5. 抵押權塗銷</h4><p>抵押權塗銷代辦費：一順位 2,000 元。<br>如賣方原有房貸，應向原貸款銀行辦理清償及申請塗銷同意書等文件。<br><span class="light-note">提前清償是否產生違約金，依借款契約及原貸款銀行規定為準。</span></p></article>
-
-<article class="doc-card"><h4>6. 實價登錄代辦服務費</h4><p>每一收件文號 1,000 元。<br><span class="light-note">此為委任代辦服務費，非政府固定規費；買賣雙方負擔方式依契約或委任約定辦理。</span></p></article>
-
-<article class="doc-card full-card"><h4>7. 賣方所得稅（簡易區分）</h4><p><strong>房地合一稅：</strong>個人出售 105 年 1 月 1 日以後取得之房屋、土地，原則適用房地合一稅；通常應於完成所有權移轉登記日之次日起算 30 日內申報。<br><strong>舊制財產交易所得：</strong>非屬房地合一新制課稅範圍之房屋交易所得，於次年度綜合所得稅結算申報期間辦理。<br><strong>營利事業出售房屋土地：</strong>申報方式與個人不同，應依營利事業所得稅相關規定辦理。<br><span class="light-note">實際稅額、適用稅制、成本費用認列及優惠條件，建議另洽國稅局或會計師確認。</span></p></article>
-
-<article class="doc-card"><h4>8. 房貸提前清償違約金</h4><p>若賣方有原貸款需提前清償，是否收取違約金及金額，依借款人與貸款銀行之約定條件辦理。<br><span class="light-note">清償流程、匯款期限及塗銷文件，建議於完稅或用印前先向銀行確認。</span></p></article>
-
-<article class="doc-card"><h4>9. 仲介服務費</h4><p>依委託契約、買賣契約或雙方約定收取。<br>本表若採賣方按實際成交價格 4% 計算，應於相關契約文件明確約定。<br><span class="light-note">不動產經紀業收取報酬，買賣雙方合計不得超過實際成交價金 6%；並不得收取差價或其他未約定報酬。</span></p></article>
-
-<article class="doc-card full-card"><h4>10. 其他個案費用</h4><p>如有繼承未辦、贈與移轉、共有物分割、印鑑證明、戶籍謄本、清償證明、權狀補發、建物測量、土地鑑界、占用排除或其他特殊事項，費用需另行估算。<br><span class="light-note">特殊案件建議於簽約前先由地政士／代書確認程序、文件及費用。</span></p></article>
-
-<article class="doc-card full-card"><h4>附註</h4><p>1. 土地鑑界、複丈、建物測量等地政規費，依申請當時主管機關收費標準及地政機關核算為準；代辦費另依委任約定收取。<br>2. 以上賣方支付項目為一般原則，若買賣雙方於契約中另有約定，依契約約定辦理。<br>3. 稅率、規費、貸款清償條件及承作規定可能因法令、政策、銀行規範或個案條件而變動，正式簽約或送件前應再次確認。<br>4. 本文件僅供一般買賣流程與費用項目說明使用；正式簽約、送件、稅費、規費及代辦費仍以買賣契約、主管機關、稅捐機關、地政機關、銀行及地政士／代書確認為準。</p></article>
-</div>
-</div>
+<div class="panel" id="buyerPay"><div class="empty"><strong>買方支付項目</strong>內容建置中，之後可放自備款、簽約款、用印款、完稅款、尾款、貸款相關費用等。</div></div>
+<div class="panel" id="sellerPay"><div class="empty"><strong>賣方支付項目</strong>內容建置中，之後可放仲介服務費、土地增值稅、塗銷費、履保費分攤等資訊。</div></div>
 </div>
 <div id="emptyContent" style="display:none;"><div class="empty"><strong id="emptyTitle">主分類</strong>此分類內容先保留空白，之後可再補上購屋流程、貸款試算、稅費說明或常見問題。</div></div>
 <section class="cta"><div><h4>看不懂文件怎麼準備？</h4><p>歡迎直接傳訊息詢問，仙仙可以協助你一步一步確認。</p></div><a href="https://lin.ee/5v29GoQ" target="_blank">LINE 詢問</a></section>
@@ -162,9 +59,9 @@ footer{text-align:center;color:#8a7564;font-size:12px;padding:20px 16px}
 <footer>© 2026 仙仙精選物件 All Rights Reserved.</footer>
 <script>
 const categories=[{id:"docs",label:"買賣應備文件",desc:"買賣房屋前先確認應備資料與常見支付項目，流程會更順利。"},{id:"cat2",label:"主分類2",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat3",label:"主分類3",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat4",label:"主分類4",desc:"此分類內容先保留空白，之後可依需求補上。"},{id:"cat5",label:"主分類5",desc:"此分類內容先保留空白，之後可依需求補上。"}];
-const desktopCats=document.getElementById("desktopCats"),mobileCats=document.getElementById("mobileCats"),contentTitle=document.getElementById("contentTitle"),contentDesc=document.getElementById("contentDesc"),documentsContent=document.getElementById("documentsContent"),emptyContent=document.getElementById("emptyContent"),emptyTitle=document.getElementById("emptyTitle");
+const desktopCats=document.getElementById("desktopCats"),mobileCats=document.getElementById("mobileCats"),contentTitle=document.getElementById("contentTitle"),contentDesc=document.getElementById("contentDesc"),sectionLabel=document.getElementById("sectionLabel"),documentsContent=document.getElementById("documentsContent"),emptyContent=document.getElementById("emptyContent"),emptyTitle=document.getElementById("emptyTitle");
 function renderCategoryButtons(){const html=categories.map((cat,i)=>`<button class="cat-btn ${i===0?"active":""}" data-cat="${cat.id}"><span>${cat.label}</span><span>›</span></button>`).join("");desktopCats.innerHTML=html;mobileCats.innerHTML=html;document.querySelectorAll(".cat-btn").forEach(btn=>btn.addEventListener("click",()=>switchCategory(btn.dataset.cat)))}
-function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;if(id==="docs"){documentsContent.style.display="block";emptyContent.style.display="none"}else{documentsContent.style.display="none";emptyContent.style.display="block";emptyTitle.textContent=cat.label}}
+function switchCategory(id){const cat=categories.find(c=>c.id===id),index=categories.findIndex(c=>c.id===id);document.querySelectorAll(".cat-btn").forEach(btn=>btn.classList.toggle("active",btn.dataset.cat===id));sectionLabel.textContent=`CATEGORY ${String(index+1).padStart(2,"0")}`;contentTitle.textContent=cat.label;contentDesc.textContent=cat.desc;if(id==="docs"){documentsContent.style.display="block";emptyContent.style.display="none"}else{documentsContent.style.display="none";emptyContent.style.display="block";emptyTitle.textContent=cat.label}}
 document.querySelectorAll(".subtab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".subtab").forEach(b=>b.classList.remove("active"));document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));btn.classList.add("active");document.getElementById(btn.dataset.sub).classList.add("active")}));
 renderCategoryButtons();
 </script>
